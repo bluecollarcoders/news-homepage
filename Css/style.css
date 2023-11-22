@@ -7,6 +7,7 @@
     /* Layout widths */
     --mobile-width: 23.438rem;
     --desktop-width: 90rem;
+    --container-width: 95.438rem;
 
     /* Colors */
     --soft-orange: hsl(35, 77%, 62%);
@@ -77,9 +78,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1527px; /* Adjust this value as needed */
+    max-width: var(--container-width); /* Adjust this value as needed */
     margin: 0 auto;
-    padding: 0 1rem; 
+    padding: 0 1rem;
   }
 
   .navbar {
