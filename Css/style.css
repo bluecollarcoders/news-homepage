@@ -3,9 +3,72 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-/* Primary */
 :root {
-    --Soft-orange: hsl(35, 77%, 62%);
-    --Soft-red: hsl(5, 85%, 63%)
-}
+    /* Layout widths */
+    --mobile-width: 23.438rem;
+    --desktop-width: 90rem;
 
+    /* Colors */
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+
+    /* Typography */
+    --body-font-size: 0.938rem;
+    --h1-font-size: 2.625rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.563rem;
+    --font-family: 'Inter', sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+    --h1-line-height: 2.5rem;
+    --h3-letter-spacing: 0.025rem;
+     --letter-spacing: 0.063rem;
+     --p-line-height: 1.5rem;
+  }
+
+  body {
+    font-family: var(--font-family);
+    font-size: var(--body-font-size);
+    color: var(--dark-grayish-blue);
+    background-color: var(--off-white);
+  }
+
+  @media (min-width: var(--desktop-width)) {
+    body {
+      background-color: var(--very-dark-blue);
+      color: var(--off-white);
+    }
+  }
+
+  h1 {
+    color: var(--very-dark-blue);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-weight-extra-bold);
+    line-height: var(--h1-line-height);
+    letter-spacing: var(--letter-spacing);
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: var(--soft-orange);
+    font-size: var(--h2-font-size);
+    letter-spacing: var(--letter-spacing);
+  }
+
+  h3 {
+    color: var(--off-white);
+    font-size: var(--h3-font-size);
+    letter-spacing: var(--h3-letter-spacing);
+    text-transform: capitalize;
+  }
+
+  p {
+    color: var(--grayish-blue);
+    font-size: var(--body-font-size);
+    line-height: var(--p-line-height);
+  }
