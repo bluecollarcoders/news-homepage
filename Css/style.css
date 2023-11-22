@@ -72,3 +72,43 @@
     font-size: var(--body-font-size);
     line-height: var(--p-line-height);
   }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1527px; /* Adjust this value as needed */
+    margin: 0 auto;
+    padding: 0 1rem; 
+  }
+
+  .navbar {
+    background-color: var(--off-white);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .navbar__logo {
+    margin-right: 2rem;
+
+  }
+
+  .navbar__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .navbar__item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .navbar__link {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+    font-size: 1rem; /* Adjust according to your needs */
+  }
+
+  .navbar__link:hover {
+    color: var(--soft-orange);
+  }
