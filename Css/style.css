@@ -166,6 +166,7 @@ box-sizing: border-box;
 	background-color: var(--grayish-blue);
 	border: none;
 	height: 1px;
+	margin-top: 1.875rem;
  }
 
   @media (max-width: 600px) {
