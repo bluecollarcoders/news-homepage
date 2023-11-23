@@ -1,4 +1,6 @@
-
+*{
+box-sizing: border-box;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -74,15 +76,17 @@
     line-height: var(--p-line-height);
   }
 
+  /* Container */
   .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     max-width: var(--container-width); /* Adjust this value as needed */
     margin: 0 auto;
     padding: 0 1rem;
   }
 
+  /* Navbar */
   .navbar {
     background-color: var(--off-white);
     margin-top: 4rem;
@@ -112,4 +116,60 @@
 
   .navbar__link:hover {
     color: var(--soft-orange);
+  }
+
+  .content-wrapper {
+	display: flex;
+	justify-content: space-between; /* Optional: Adds some space between the divs */
+  }
+
+  .content-wrapper > div:last-child p {
+	max-width: 85%; /* Adjust to your needs */
+	margin-bottom: 40px;
+	overflow-wrap: break-word; /* Breaks the word at the end of the line */
+  }
+
+  .content-wrapper > div:first-child h1 {
+	max-width: 60%; /* Adjust to your needs */
+	overflow-wrap: break-word; /* Breaks the word at the end of the line */
+  }
+
+  .content-wrapper > div:last-child a {
+	background-color: var(--very-dark-blue);
+	color: var(--off-white);
+	letter-spacing: 4px;
+	padding: 0.875rem 2.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+  }
+
+  .featured__article__img img {
+	width: 90%; /* Increase the width to your liking */
+	margin-right: 20px; /* Add a right margin to create space between the image and the widget */
+  }
+
+  .featured__widget {
+	background-color: var(--very-dark-blue);
+	padding: 20px 20px 20px;
+  }
+
+  .featured__widget__item a {
+	color: var(--off-white);
+	text-decoration: none; /* Removes the underline */
+  }
+
+  .featured__widget__item a:hover {
+	color: var(--soft-orange);
+  }
+
+ .featured__widget__item hr {
+	background-color: var(--grayish-blue);
+	border: none;
+	height: 1px;
+ }
+
+  @media (max-width: 600px) {
+	.content-wrapper {
+	  flex-direction: column;
+	}
   }
