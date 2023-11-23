@@ -118,14 +118,16 @@ box-sizing: border-box;
     color: var(--soft-orange);
   }
 
+  /* Content wrapper */
   .content-wrapper {
 	display: flex;
 	justify-content: space-between; /* Optional: Adds some space between the divs */
+	padding-bottom: 20px;
   }
 
   .content-wrapper > div:last-child p {
 	max-width: 85%; /* Adjust to your needs */
-	margin-bottom: 40px;
+	margin-bottom: 2.5rem;
 	overflow-wrap: break-word; /* Breaks the word at the end of the line */
   }
 
@@ -137,20 +139,21 @@ box-sizing: border-box;
   .content-wrapper > div:last-child a {
 	background-color: var(--very-dark-blue);
 	color: var(--off-white);
-	letter-spacing: 4px;
+	letter-spacing: 0.25rem;
 	padding: 0.875rem 2.5rem;
 	text-decoration: none;
 	text-transform: uppercase;
   }
 
+  /* Featured Article */
   .featured__article__img img {
 	width: 90%; /* Increase the width to your liking */
-	margin-right: 20px; /* Add a right margin to create space between the image and the widget */
+	margin-right: 1.25rem; /* Add a right margin to create space between the image and the widget */
   }
 
   .featured__widget {
 	background-color: var(--very-dark-blue);
-	padding: 20px 20px 20px;
+	padding: 1.25rem 1.25rem 1.25rem;
   }
 
   .featured__widget__item a {
@@ -165,10 +168,47 @@ box-sizing: border-box;
  .featured__widget__item hr {
 	background-color: var(--grayish-blue);
 	border: none;
-	height: 1px;
+	height: 0.0625rem;
 	margin-top: 1.875rem;
  }
 
+ /* Card components */
+ .card {
+	display: grid;
+	grid-template-columns: 45% 55%; /* Sets the width distribution */
+	grid-auto-rows: minmax(50px, auto); /* Controls the row height */
+	align-items: start; /* Aligns the image and the text to the top */
+	grid-gap: 20px; /* Creates a gap between the image and the text */
+	width: 30%;
+  }
+
+  .card img {
+	width: 100%;
+	height: 100%; /* Adjust this to control the image's height */
+	object-fit: cover;
+  }
+
+  .card__content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px; /* Creates a gap between the text elements */
+  }
+
+  .card__content h3 {
+	color: var(--grayish-blue);
+	margin: 0; /* Removes the default margin */
+  }
+
+  .card__content h4 {
+	color: var(--very-dark-blue);
+	margin: 0; /* Removes the default margin */
+  }
+
+  .card__content p {
+	margin: 0; /* Removes the default margin */
+  }
+
+  /* Responsive Break Points */
   @media (max-width: 600px) {
 	.content-wrapper {
 	  flex-direction: column;
