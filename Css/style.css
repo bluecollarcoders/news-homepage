@@ -122,7 +122,7 @@ box-sizing: border-box;
   .content-wrapper {
 	display: flex;
 	justify-content: space-between; /* Optional: Adds some space between the divs */
-	padding-bottom: 20px;
+	padding-bottom: 1.25rem;
   }
 
   .content-wrapper > div:last-child p {
@@ -178,7 +178,7 @@ box-sizing: border-box;
 	grid-template-columns: 45% 55%; /* Sets the width distribution */
 	grid-auto-rows: minmax(50px, auto); /* Controls the row height */
 	align-items: start; /* Aligns the image and the text to the top */
-	grid-gap: 20px; /* Creates a gap between the image and the text */
+	grid-gap: 1.25rem; /* Creates a gap between the image and the text */
 	width: 30%;
   }
 
@@ -191,7 +191,7 @@ box-sizing: border-box;
   .card__content {
 	display: flex;
 	flex-direction: column;
-	gap: 20px; /* Creates a gap between the text elements */
+	gap: 1.25rem; /* Creates a gap between the text elements */
   }
 
   .card__content h3 {
