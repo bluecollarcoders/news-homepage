@@ -208,6 +208,20 @@ box-sizing: border-box;
 	margin: 0; /* Removes the default margin */
   }
 
+  .content-wrapper__card {
+	display: flex;
+	justify-content: space-between; /* Optional: Adds some space between the divs */
+	padding-bottom: 1.25rem;
+  }
+
+  .content-wrapper__card a {
+	color: var(--very-dark-blue);
+	text-decoration: none;
+  }
+  .content-wrapper__card a:hover {
+	color: var(--soft-red);
+  }
+
   /* Responsive Break Points */
   @media (max-width: 600px) {
 	.content-wrapper {
